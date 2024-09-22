@@ -5,7 +5,7 @@ Extensão para Google Chrome que fecha todas as guias, limpa o histórico dos ú
 ## Instalação
 
 1. Clone o repositório:
-   git clone https://github.com/GuilhermeCeub/chrome-extension
+   git clone https://github.com/GuilhermeCeub/Sistematiza-o-Engenharia-Software
 
 2. Abra o Chrome e vá para chrome://extensions/
 
