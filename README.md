@@ -33,11 +33,6 @@ Extensão para Google Chrome que fecha todas as guias, limpa o histórico dos ú
 
 2. O mesmo comportamento (fechar guias, limpar histórico e abrir a URL) deve ocorrer.
 
-## Depuração
-
-1. Se algo não funcionar como esperado, abra o Console do Chrome (Ctrl+Shift+J ou Cmd+Option+J no macOS) e verifique se há mensagens de erro.
-
-2. Também pode abrir chrome://extensions/, clicar em Service Worker na sua extensão e abrir a aba de depuração do Service Worker para verificar logs ou erros.
 
 ## Equipe
 
