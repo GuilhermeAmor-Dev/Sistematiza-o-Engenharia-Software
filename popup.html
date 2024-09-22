@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oops!...</title>
+  </head>
+  <body>
+    <button id="executeAction">I did it again</button>
+
+    <script>
+      document
+        .getElementById("executeAction")
+        .addEventListener("click", function () {
+          chrome.runtime.sendMessage({ action: "execute-action" });
+        });
+    </script>
+  </body>
+</html>

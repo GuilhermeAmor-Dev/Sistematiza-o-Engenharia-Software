@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oops!... I did it again</title>
+  </head>
+  <body>
+    <h1>Configurar URL</h1>
+    <input type="text" id="userUrl" placeholder="https://www.exemplo.com" />
+    <button id="saveBtn">Salvar</button>
+
+    <script>
+      // Carregar a URL salva
+      chrome.storage.sync.get(["userUrl"], function (result) {
+        document.getElementById("userUrl").value = result.userUrl || "";
+      });
+
+      // Salvar a nova URL
+      document.getElementById("saveBtn").addEventListener("click", function () {
+        let userUrl = document.getElementById("userUrl").value;
+        chrome.storage.sync.set({ userUrl: userUrl }, function () {
+          alert("URL salva com sucesso!");
+        });
+      });
+    </script>
+  </body>
+</html>
